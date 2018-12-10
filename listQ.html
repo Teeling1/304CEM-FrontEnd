@@ -3,10 +3,11 @@
   <title>Quiz Questions</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!--Linking to css stylesheet-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--Linking to jquery api stylesheet-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" 
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/2.11.0/tabulator.min.css" rel="stylesheet">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/2.11.0/tabulator.min.js"></script>
@@ -25,29 +26,24 @@
     <div id="updatequestionitem" style="display: none;">
           <h2>Question View</h2>
           <div>
-            <div style="display: none;">
+            <div style="display: none;"><!--Display list of questions-->
               <label for="_id2">U.I.D.</label>
               <input type="text" name="_id2" id="_id2" value="" readonly>
             </div>
-            <div>
-              <label for="parent_examq">Parent Exam:</label>
-              <input type="text" name="parent_examq" id="parent_examq" value="">
-            </div>
-            <div>
-              <label for="contentq">Question:</label>
+              <label for="contentq">Question:</label><!--Display question-->
               <input type="text" name="contentq" id="contentq" value="">
             </div>
             <div>
-              <label for="answerq">Answer:</label>
+              <label for="answerq">Answer:</label><!--Display answer-->
               <input type="text" name="answerq" id="answerq" value="">
             </div>
             <div>
-              <label for="created_dateq">Created Date:</label>
+              <label for="created_dateq">Created Date:</label><!--Display the date of quiz creation-->
               <input type="text" name="created_dateq" id="created_dateq">
             </div>
             <div>
-              <button id="updatebuttonQ">Update Question</button>
-              <button id="deletebuttonQ">Delete Question</button>
+              <button id="updatebuttonQ">Update Question</button><!--Display an option to update question-->
+              <button id="deletebuttonQ">Delete Question</button><!--Display an option to delete question-->
             </div>
           </div>
 </body>
