@@ -1,6 +1,6 @@
 $(function()
 {
-    function after_form_submitted(data) 
+    function after_form_submitted(data) //function calls after radio button has been clicked on
     {
         if(data.result == 'success')
         {
