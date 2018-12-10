@@ -1,4 +1,3 @@
-
 $(function()
 {
     function after_form_submitted(data) 
@@ -6,8 +5,8 @@ $(function()
         if(data.result == 'success')
         {
             $('form#reused_form').hide();
-            $('#success_message').show();
-            $('#error_message').hide();
+            $('#success_message').show();//shows successful message
+            $('#error_message').hide();//shows errror message
         }
         else
         {
@@ -56,7 +55,7 @@ $(function()
                 url: 'handler.php',
                 data: $form.serialize(),
                 success: after_form_submitted,
-                dataType: 'json' 
+                dataType: 'json' //Confirms change in form submitted
             });        
         
       });	
