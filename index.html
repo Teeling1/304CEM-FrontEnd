@@ -2,8 +2,8 @@
 <head>
   <title>Quiz Maker</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="CSS/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--Set the viewport width to device width for mobile-->
+  <link rel="stylesheet" href="CSS/main.css"><!--Linking CSS stylesheets-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -14,32 +14,34 @@
 </head>
 <body ng-app="myApp">
     <section id="blogText">
-					<section>
-          <div class="jumbotron text-center">
-  <h1>Quiz maker</h1>
-  <h4>The Easiest Online Quiz Maker. Publish your quiz in a matter of minutes. Go ahead Try it now!</h4> 
-</div>
-<div class="container">
-    <div class="row">
-      <div class="col-sm-3">
-        <h3>Quiz Maker</h3>
-        <h4><a href="#/!">User Sign Up</a></h4>
-        <div id="admintools" style="display: none;">
-            <h4><a href="#!listQuiz">List of Quizzes</a></h4>
-            <h4><a href="#!listQ">Manage Questions</a></h4>
-            <h4><a href="#!listA">Manage Answers</a></h4>
-        </div>
-        <h4><a href="#!createU">User Login</a></h4>
-        <h4><a href="#!loginU">Start New Quiz</a></h4>
-      </div>
-      <div class="col-sm-6 text-center">
-        <div ng-view></div>
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
-					</section>
-   </div>
+	    <section>
+		    	<div class="jumbotron text-center"><!--Set the internal text to centre-->
+			    	<h1>Quiz maker</h1>
+			    	<h4>The Easiest Online Quiz Maker. Publish your quiz in a matter of minutes. Go ahead Try it now!</h4> 
+		     	</div>
+		    
+		     	<div class="container"> <!--Set text in a container-->
+    		     	<div class="row">
+                     	<div class="col-sm-3">
+        		    	<h3>Quiz Maker</h3>
+        		    	<h4><a href="#/!">User Sign Up</a></h4> <!--Display list of headings-->
+        	   	<div id="admintools" style="display: none;"> <!--No style required on id-->
+            		    	<h4><a href="#!listQuiz">List of Quizzes</a></h4>
+            		    	<h4><a href="#!listQ">Manage Questions</a></h4>
+				<h4><a href="#!listA">Manage Answers</a></h4>
+        		    	<h4><a href="#!createU">User Login</a></h4>
+				<h4><a href="#!feedbackU">User Feedback</a></h4>
+        			<h4><a href="#!loginU">Start New Quiz</a></h4>
+      			</div>
+				
+      			<div class="col-sm-6 text-center"><!--List column has text in midle-->
+        		<div ng-view></div>
+      			</div>
+						
+      			<div class="col-sm-3">
+      			</div>
+	</section><!--List and header complete-->
+   			</div>
   </script>
 </body>
 </html>
