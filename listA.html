@@ -2,7 +2,7 @@
 <head>
   <title>Manage Answers</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Setting page width--!>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Setting page width-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -10,12 +10,12 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/2.11.0/tabulator.min.css" rel="stylesheet">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/2.11.0/tabulator.min.js"></script>
-  <script type="text/javascript" src="javascript/retrieveTableU.js"></script>
+  <script type="text/javascript" src="javascript/retrieveTableU.js"></script><!--Linking page to javascript-->
   <script type="text/javascript" src="javascript/updateU.js"></script>
   <script type="text/javascript" src="javascript/deleteU.js"></script>
 </head>
 <body>
-    <div id="userlisttable">
+    <div id="userlisttable"><!--Showing answer table-->
         <h2>Answers </h2>
         <h4>To view the answer to a question please click on a row.</h4>
         <div>
@@ -25,20 +25,12 @@
     <div id="updateansweritem" style="display: none;">
           <h2>User View</h2>
           <div>
-            <div style="display: none;">
+            <div style="display: none;"><!--Display answer based on user-->
               <label for="_id3">U.I.D.</label>
               <input type="text" name="_id3" id="_id3" value="" readonly>
             </div>
             <div>
-              <label for="email_addressu">Email Address:</label>
-              <input type="text" name="email_addressu" id="email_addressu" value="">
-            </div>
-            <div>
-              <label for="passwordu">Password:</label>
-              <input type="password" name="passwordu" id="passwordu" value="">
-            </div>
-            <div>
-              <label for="Answersu">Answers</label>
+              <label for="Answersu">Answers</label> <!--Shows answers to Question 1-4-->
                 <option value="Other">Unlisted</option>
                 <option value="Q1">Q1</option>
                 <option value="Q2">Q2</option>
@@ -47,12 +39,12 @@
               </select>
             </div>
             <div>
-              <label for="created_dateu">Created Date:</label>
+              <label for="created_dateu">Created Date:</label><!--Showing user when the answer was created-->
               <input type="text" name="created_dateu" id="created_dateu">
             </div>
             <div>
-              <button id="updatebuttonU">Update Question</button>
-              <button id="deletebuttonU">Delete Question</button>
+              <button id="updatequestionU">Update Question</button> <!--radio button to update question-->
+              <button id="deletequestionU">Delete Question</button> <!--radio button to delete question-->
             </div>
           </div>
 </body>
